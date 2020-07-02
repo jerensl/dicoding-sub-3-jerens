@@ -9,7 +9,7 @@ if ("serviceWorker" in navigator) {
 
 function registerServiceWorker() {
   return navigator.serviceWorker
-    .register("/sw.js")
+    .register("/dicoding-sub-3-jerens/sw.js", , {scope: '/dicoding-sub-3-jerens/'})
     .then(function (registration) {
       console.log("Service worker registered successfully!");
       return registration;
