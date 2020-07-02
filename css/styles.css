@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  background-color: #f2f2fa;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(39, 39, 39);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(180, 12, 12);
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+#body-content {
+  padding-top: 1.5rem;
+}
+
+.klasemen {
+  padding: 0 0.5rem 0;
+  border-radius: 10px;
+}
+
+.emblem {
+  position: relative;
+  top: 5px;
+  margin: 0 0.2rem 0 0;
+  height: 1.4rem;
+  width: auto;
+}
+
+.fav-img {
+  margin: 0 1rem;
+  height: auto;
+  max-width: 10rem;
+}
+
+.match-card {
+  padding: 2rem 0;
+  border-radius: 10px;
+}
+
+.match-time {
+  font-size: 12px;
+}
+
+.top-score {
+  padding: 0 0.5rem 0;
+  border-radius: 10px;
+}
+
+#standings tr:hover {
+  cursor: pointer;
+  background-color: rgb(122, 253, 253);
+}
+
+#standings td {
+  justify-content: center;
+}
+
+.about {
+  margin-top: 3rem;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

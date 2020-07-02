@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  background-color: #f2f2fa;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+.club {
+  margin-top: 2rem;
+}
+
+.club h5 {
+  margin-top: 30px;
+}
+
+.club img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 6rem;
+}
+
+.club-card {
+  margin-top: 2rem;
+  font-size: 12px;
+  padding: 2rem 0;
+  border-radius: 10px;
+}
+
+.club-card .col {
+  padding-top: 1rem;
+}
+
+.list-players {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.tabs-content.carousel.carousel-slider .carousel-item.active {
+  position: relative;
+}
+
+.tabs-content {
+  height: auto !important;
+  min-height: 100%;
+}
+
+.matches-time {
+  margin-top: 0.6rem;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

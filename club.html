@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RedDevils</title>
+    <meta name="description" content="Football App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="css/club.css" />
+    <meta name="theme-color" content="#00897B" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar z-depth-0 red darken-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="./index.html" class="brand-logo" id="logo-container"
+          >RedDevils</a
+        >
+        <a href="./index.html" class="sidenav-trigger">
+          <i class="material-icons">arrow_back</i>
+        </a>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div id="club">
+      <div class="preloader-wrapper active loader">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul id="tabs-club center" class="tabs">
+        <li class="tab col s3"><a class="active" href="#squad">Squad</a></li>
+        <li class="tab col s3">
+          <a href="#matches">Fixtures</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#results">Results</a>
+        </li>
+      </ul>
+      <div id="squad" class="col s12">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Nationality</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody id="players"></tbody>
+        </table>
+      </div>
+      <div class="row center" id="matches" class="col s12"></div>
+      <div class="row center" id="results" class="col s12"></div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons" id="save-icons">save</i>
+      </a>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="js/utils.js"></script>
+    <script src="js/club.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/renders.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+  </body>
+</html>
