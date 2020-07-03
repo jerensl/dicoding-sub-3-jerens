@@ -5,7 +5,7 @@
   "description": "Aplikasi Untuk mengetahui info tentang sepakbola",
   "start_url": "/index.html",
   "display": "standalone",
-  "scope": "/",
+  "scope": "https://jerensl22.github.io/dicoding-sub-3-jerens/",
   "background_color": "#e53935",
   "theme_color": "#e53935",
   "orientation": "portrait",
