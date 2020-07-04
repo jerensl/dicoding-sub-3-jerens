@@ -19,6 +19,14 @@ const component = (() => {
       </div>
     </div>`;
     },
+    error: () => {
+      document.getElementById(elm).innerHTML = `
+      <div class="center">
+      <h6>
+      Sorry Something Wrong....
+      </h6>
+    </div>`;
+    },
     render: (html) => {
       document.getElementById(elm).innerHTML = html;
     },
@@ -40,7 +48,7 @@ const component = (() => {
         const news = render.showNews(data);
         mounting(elementID).render(news);
       })
-      .catch((err) => console.log(err));
+      .catch(() => mounting(elementID).error());
   }
 
   function getCompetition() {
