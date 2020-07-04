@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb {
 
 #standings tr:hover {
   cursor: pointer;
-  background-color: rgb(122, 253, 253);
+  background-color: rgba(252, 67, 67, 0.582);
 }
 
 #standings td {
